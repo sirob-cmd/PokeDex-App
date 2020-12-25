@@ -1,0 +1,95 @@
+.favoriteList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem 17vw;
+}
+
+.favoritePokemon {
+  background-color: #facc6b;
+  background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 11px 5px rgba(0, 0, 0, 0.425);
+  box-shadow: 0px 5px 11px 5px rgba(0, 0, 0, 0.521);
+  transition: all 200ms ease-in;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favoritePokemon:hover {
+  transform: translateY(-5px);
+}
+
+.removeFavorite {
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 0;
+  margin-top: 7px;
+}
+
+.favoritePokemonImg {
+  cursor: pointer;
+  min-width: 50%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.nameAndBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* width: 100%; */
+}
+
+.favBtn {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s ease;
+  color: red;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.favBtn:hover {
+  opacity: 0.9;
+  color: #333;
+}
+
+.favPokemonName {
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+}
+
+.noFavorites {
+  text-shadow: 4px 3px 5px #130805;
+}
+
+@media screen and (max-width: 1000px) {
+  .favoriteList {
+    margin: 2rem 5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .favoriteList {
+    margin: 2rem 2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .favoriteList {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}

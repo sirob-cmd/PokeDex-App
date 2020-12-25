@@ -1,0 +1,16 @@
+.popupContainer {
+  text-shadow: 4px 3px 5px #130805;
+  text-align: center;
+  transition: all 1500ms ease-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokeballGif {
+  display: block;
+  max-width: 400px;
+  height: auto;
+}
